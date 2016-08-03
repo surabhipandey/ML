@@ -4,7 +4,7 @@ def printTransactions(m, k, d, name, owned, prices):
     buyDict = {}
     for index in range(k):
         if owned[index] > 0:
-            if prices[index][4]>prices[index][3] and abs((prices[index][4]-prices[index][0])/prices[index][4])>:
+            if prices[index][4]>prices[index][3]:
                 lines.append(name[index]+' SELL '+str(owned[index]))
     for index in range(k):
         if prices[index][4] < prices[index][3]:
